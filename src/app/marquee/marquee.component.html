@@ -1,0 +1,16 @@
+<section class=" float_left" [ngStyle]="{'background-color': marObj.bgColor}">
+  <!---edu_top_header_wrapper_header-->
+  <div class="container">
+      <div class="row flex-marque">
+        <div class="flex-mar-label">
+          <span>
+            {{marObj.title}}
+          </span>
+        </div>
+          <div class="flex-mar-content edu_top_header_left_wrapper">
+                  <marquee [scrollAmount]="marObj.speed"><p> {{marObj.content}} </p></marquee>
+          </div>
+          
+      </div>
+  </div>
+</section>

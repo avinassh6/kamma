@@ -2,13 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MarqueeComponent } from './marquee/marquee.component';
+import { AppRoutingModule } from './app.routing.module';
+import { StaticComponent } from './static/static.component';
+import { NavBarComponent } from './static-layout/nav-bar/nav-bar.component';
+import { FooterComponent } from './view/footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [				
+    AppComponent,
+      MarqueeComponent,
+      StaticComponent,
+      NavBarComponent,
+      FooterComponent
+   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

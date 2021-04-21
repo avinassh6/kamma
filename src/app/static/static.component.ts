@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-static',
+  templateUrl: './static.component.html',
+  styleUrls: ['./static.component.css']
 })
-export class AppComponent {
-  title = 'kammayouthbrigade';
-
+export class StaticComponent implements OnInit {
   local ={
     title : 'Local News ',
     content : 'Hello !! Welcome to our online journals, *|* we are ready o publish journals in subjects of science, commerce',
@@ -26,4 +24,9 @@ export class AppComponent {
     bgColor: 'rgba(116,66,93,1)',
     speed :5
   }
+  constructor() { }
+
+  ngOnInit() {
+  }
+
 }

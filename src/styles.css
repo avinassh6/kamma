@@ -1,1 +1,426 @@
 /* You can add global styles to this file, and also import other style files */
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+ @import "~bootstrap/dist/css/bootstrap.css";
+
+ .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;} 
+  }
+
+
+
+  .navbar-brand{
+    height:100px;
+    padding: 0px
+  }
+  .navbar-nav{
+    margin-left:50px;
+  }
+  
+  .navbar-nav > li{
+    margin:0px 10px;
+  }
+  .navbar-nav > li > a{
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color:rgb(43, 57, 135);
+  padding: 10px 5px;
+  } 
+  .navbar-brand>img{
+    height:100px;
+  }
+
+  
+  .navbar-nav .active a,.nav>li>a:focus, .nav>li>a:hover{
+    color:#86bc33 !important;
+    border-bottom:2px solid #86bc33;
+    background: transparent;
+  }
+
+
+  .navbar-nav .get-started-btn {
+  margin-left: 10px !important;
+  /*transform: skew(-40deg);*/
+ }
+
+ .get-started-btn{
+  color: #fff !important;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+
+  border-radius: 8px;
+  
+  text-align: center;
+  
+ }
+ .navbar-right>li>a {
+    color:#fff;
+     border-bottom:none !important;
+ }
+ .get-started-btn :hover{
+  border-bottom: none !important
+ }
+  .mt-10{
+    margin-top:10px;
+  }
+  .content{
+    width:100%;
+    background: #f5fefe;
+  }
+
+  .carousel-inner .item{
+    height:300px;
+  }
+
+  .flex-events-container{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .flex-event-item{
+    flex:1;
+    margin-right:10px;
+    margin-bottom: 10px;
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+    height:180px;
+    border-radius: 4px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .flex-icon i{
+    color:#fff;
+    font-size: 50px;
+  }
+  .flex-event{
+    font-weight: 500;
+    margin-top: 5px;
+    color:#fff;
+  }
+  .pink{
+    background: #bf3a95;
+
+  }
+  .oragne{
+    background: #f07238;
+    color:#fff;
+  }
+  .green{
+    background: #78c05a
+  }
+  .blue{
+    background: #3c9bc6
+  }
+  .vilot{
+    background: #53429a
+  }
+  .lightgreen{
+    background: #d2c23f
+  }
+  .mr-0{
+    margin-right: 0px;
+  }
+
+  .flex-adds{
+width:100%;
+margin: 0px;
+flex-direction: column;
+background: #f1f1f1;
+padding: 10px;
+}
+
+.flex-events{
+width:100%;
+margin: 0px;
+flex-direction: column;
+background: #f1f1f1;
+padding: 10px;
+background: #1b61a5;
+color: #fff;
+text-align: left;
+border-radius: 4px 0px;
+font-weight: 500;
+cursor: pointer;
+}
+
+.content .row{
+margin: 0px;
+}
+.flex-dates-wrapper{
+  width:100%;
+  display: flex;;
+  flex-direction: row;
+  background: #efefef;
+  align-items:center;
+  border-bottom: 1px solid #ddd;
+}
+.flex-dates{
+background: #697baf;
+color:#fff;
+padding: 10px;
+width:50px;
+
+}
+.flex-dates-events{
+padding-left: 10px;
+color:#666;
+font-weight: 500;
+flex:1;
+}
+
+.yellowclr{
+background: #ce9a3d;
+color:#fff;
+font-size: 14px;
+font-weight:500;
+}
+.pt-10{
+padding-top: 10px;
+}
+.vliotcolor{
+   background: #da2684;
+color:#fff;
+font-size: 14px;
+font-weight:500;
+}
+.margwuee{
+width:100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+height:50px;
+align-items: center;
+}
+.margwuee p{
+margin: 5px !important
+}
+.maecontent{
+width:100%;
+background: #f5fefe
+}
+
+.edu_top_header_wrapper{
+padding-top:5px;
+padding-bottom:5px;
+    background: rgba(116,66,93,1);
+background: -moz-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(116,66,93,1)), color-stop(100%, rgba(62,46,46,1)));
+background: -webkit-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+background: -o-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+background: -ms-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+background: linear-gradient(to right, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74425d', endColorstr='#3e2e2e', GradientType=1 );
+}
+.edu_top_header_wrapper_yellow{
+padding-top:5px;
+padding-bottom:5px;
+    background: #ce9a3d;
+/*background: -moz-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(116,66,93,1)), color-stop(100%, rgba(62,46,46,1)));
+background: -webkit-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+background: -o-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+background: -ms-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+background: linear-gradient(to right, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);*/
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74425d', endColorstr='#3e2e2e', GradientType=1 );
+}
+.edu_top_header_left_wrapper p{
+color:#fff;
+    padding-top: 7px;
+    margin: 0px;
+}
+.edu_top_header_wrapper_header{
+    padding-top:5px;
+    padding-bottom:5px;
+        background: #78c05a;
+  /*background: -moz-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(116,66,93,1)), color-stop(100%, rgba(62,46,46,1)));
+  background: -webkit-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+  background: -o-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+  background: -ms-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
+  background: linear-gradient(to right, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);*/
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74425d', endColorstr='#3e2e2e', GradientType=1 );
+  }
+  .edu_top_header_left_wrapper p{
+    color:#fff;
+        padding-top: 0px;
+        margin: 0px;
+  }
+  
+
+.carousel-inner{
+    height:300px;
+}
+.navbar-toggler{
+    background-color: #ddd;
+}
+.navbar-text{
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+}
+.br-4{
+    border-radius: 4px;
+}
+
+  @media (min-width: 768px){
+    .navbar-nav{
+        flex-direction: row;
+    }  
+    
+    
+  }
+
+   @media (max-width: 768px){
+    .flex-events-container{
+flex-direction: column;
+margin: 0px;
+}
+.navbar-nav{
+  margin-left: 0pxs;
+}
+.navbar-brand>img{
+  height:100px;
+}
+.content .container{
+padding: 0px;
+
+}
+.carousel-inner{
+    height:auto;
+}
+
+.content .row{
+margin: 0px;
+}
+
+.navbar-toggle{
+color:#ddd;
+background-color:#efefef;
+margin-top:20px;
+
+}
+.navbar-brand{
+padding-left: 10px;
+}
+.navbar-nav > li> a{
+text-align:center;
+}
+
+
+.flex-events-container .mr-0{
+margin-right:15px;
+}
+.navbar-toggle .icon-bar{
+background:#666;
+}
+   }
+
+   /* .collapse:not(.show) {
+    display: flex;
+    flex: 1;
+   } */
+.navbar .container{
+    flex-direction: row;
+}
+.navbar-header{
+    width:120px;
+}
+
+
+.flex-dates1-wrapper{
+    width:100%;
+    display: flex;;
+    flex-direction: row;
+    background: #efefef;
+    align-items:center;
+	border-bottom: solid;border-style: 1px;border-width: 1px;
+}
+.flex-dates1{
+  background: #53429a;
+  color:#fff;
+  padding: 5px;
+  width:50px;
+
+}
+.flex-dates-news{
+  padding-left: 10px;
+  color:#666;
+  font-weight: 500;
+  flex:1;
+}
+
+.flex-news{
+    width:100%;
+    margin: 0px;
+    flex-direction: column;
+    padding: 10px;
+    background:#53429a;
+    color: #fff;
+    text-align: left;
+    border-radius: 4px 0px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top:5px !important;
+    border-left:5px solid #f92552
+  }
+
+
+.k-donate{
+    background: #78c05a; width:150px; padding:10px!important; margin-bottom:10px
+}
+.marquee_label{
+    color:white;
+    font-weight: bold;
+}
+
+  /* media quires 576*/
+
+  @media (max-width: 768px){
+      .flex-event{
+          font-size: 16px;
+      }
+      .flex-event-item{
+          flex: 0 0 30%;
+          flex-wrap: wrap;
+      }
+      .flex-events-container{
+          flex-direction: row;
+      }
+      .k-donate{
+          width:100%
+      }
+  }
