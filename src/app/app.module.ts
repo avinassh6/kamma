@@ -8,7 +8,7 @@ import { StaticComponent } from './static/static.component';
 import { NavBarComponent } from './static-layout/nav-bar/nav-bar.component';
 import { FooterComponent } from './view/footer/footer.component';
 import { RouterModule } from '@angular/router';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import {  LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [				
@@ -23,7 +23,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     AppRoutingModule,
     RouterModule 
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,5 @@
 {
-  "name": "kamma Youth Brigade",
+  "name": "kammayouthbrigade",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-test": "npx angular-http-server --path dist --open"
+    "build-test": "npx angular-http-server --path dist/kammayouthbrigade  kammayouthbrigade --open"
   },
   "private": true,
   "dependencies": {
